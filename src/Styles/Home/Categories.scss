@@ -1,0 +1,110 @@
+.Categories{
+    display: flex;
+    justify-content: center;
+    padding: 10px 1vw;
+    gap: 10px;
+    .Categories_Item{
+        @include Flex;
+        flex-direction: column;
+        position: relative;
+        background: var(--bg);
+        @include Shadow;
+        padding: 15px 30px;
+        height: 15vw;
+
+        img{
+            height: 12vw;
+            width: 100%;
+            mix-blend-mode: multiply;
+            margin-bottom: 10px;
+        }
+        button{
+            
+            color: var(--text);
+            all: unset;
+            width: 100%;
+             position: absolute;
+            z-index: 999;
+            left: 0;
+            text-align: center;
+            bottom: 2px;
+            font-weight: bold;
+           
+            transition: all 0.3s ease-in-out;
+        }
+         &:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: all 0.3s ease;
+
+            button{
+                 background: var(--secondary);
+                color: var(--bg);
+                opacity: 1;
+            }
+               
+            }
+    }
+
+}
+
+.CategoriesSwiper{
+    display: flex; justify-content: center;align-items: center;
+    width: 96%;
+    margin-inline: auto;
+    padding-top: 25px;
+    .arrow_svg_right,.arrow_svg_left{
+        color: var(--secondary);
+        font-size: 40px;
+    }
+    
+}
+.ar{
+    .CategoriesSwiper{
+        flex-direction: row-reverse !important;
+    }
+}
+   @media screen and (max-width: 600px) {
+    .CategoriesSwiper{
+        width: 100%;
+        .arrow_svg_left {
+            flex: 0 0 7%;
+            margin-left: 15px;
+        }
+        .arrow_svg_right {
+            flex: 0 0 7%;
+            margin-right: 15px;
+        }
+        .swiper {
+            flex: 0 0 80%;
+        }
+    }
+    .Categories{
+        .Categories_Item {
+            width: 90%;
+            margin-inline: auto;
+            height:16vw ;
+            padding-inline: 24px;
+            button{
+                font-size: 12px;
+            }
+            img {
+                margin-bottom: 20px;
+            }
+            }  
+        }      
+}
+
+   @media screen and (max-width: 400px) {
+    .Categories .Categories_Item{
+        width: 90%;
+        height: 14vh;
+        padding-inline: 20px;
+        img {
+            height: 18vh;
+        }
+        button {
+            font-size: 16px;
+        }
+        }      
+}

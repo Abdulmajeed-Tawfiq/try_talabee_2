@@ -1,0 +1,82 @@
+.MidBar{
+    padding-block: 15px;
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 3%;
+    padding-inline: 10px;
+
+}
+.MidBar_Left{
+    width: 30%;   
+}
+.MidBar_Left{
+    flex: 15%;
+    @include Flex;
+}
+.MidBar_Mid{
+    flex: 50%;
+    @include Flex;
+    input{
+        width: 100%;
+    }
+    svg{
+        color: var(--white);
+    }
+}
+.MidBar_Right{
+    flex: 15%;
+    @include Flex;
+}
+
+.InputAutoComplete{
+    width: 100%;
+    height: 55px;
+    display: grid;
+    align-items: center;
+    .ant-input-wrapper .ant-input-group-addon .ant-input-search-button{
+        background-color:var(--secondary);
+        &:hover svg {
+            transition: all 0.3s ease;
+            scale: 1.4;
+        }
+       }
+       
+       /* Ant icon */
+       .ant-input-group-addon .ant-input-search-button .ant-btn-icon{
+        color:var(--bg);
+       }
+}
+.Cart_Icon{
+    width: 50px;
+    height: 50px;
+    background: var(--bg2);
+    border-radius: 50%;
+    @include Flex;
+    cursor: pointer;
+    svg{
+        color: var(--blacktowhite) !important;
+        width: 30px;
+        height: 25px;
+    }
+    &:hover {
+        transition: all 0.3s ease-in-out;
+        background: var(--secondary);
+        
+        svg {
+            color: var(--white) !important;
+        }
+    
+    }
+}
+.Badge_Button{
+    margin-inline: 10px;
+    :where(.css-dev-only-do-not-override-1ae8k9u).ant-badge .ant-badge-count{
+        background: #000 !important;
+    }
+}
+
+.Drawer_Body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}

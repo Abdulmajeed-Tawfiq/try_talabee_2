@@ -1,0 +1,241 @@
+.dark{
+
+
+    .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+           span{
+              background: #fff !important;
+           }
+     }
+
+     .ant-space-item{
+         span{
+             color: var(--white);
+        }
+     }
+     :where(.css-dev-only-do-not-override-1ae8k9u).ant-pagination .ant-pagination-total-text , :where(.css-dev-only-do-not-override-1ae8k9u).ant-pagination .ant-pagination-disabled .ant-pagination-item-link, :where(.css-dev-only-do-not-override-1ae8k9u).ant-pagination .ant-pagination-disabled:hover .ant-pagination-item-link , :where(.css-dev-only-do-not-override-1ae8k9u).ant-pagination .ant-pagination-item a{
+        color: var(--blacktowhite);
+     }
+     .ant-drawer-content{
+        background: var(--bg);
+        .ant-drawer-title{
+            color: var(--blacktowhite);
+        }
+     }
+
+
+     .Product_Left{
+        img{
+            mix-blend-mode: lighten !important;
+        }
+     }
+
+
+     .Product_Description{
+        :where(.css-dev-only-do-not-override-1ae8k9u).ant-collapse , span, p{
+            color: var(--blacktowhite) !important;
+        }
+     }
+
+
+
+
+     
+    :where(.css-dev-only-do-not-override-1ae8k9u).ant-table-wrapper .ant-table-thead >tr>th, :where(.css-dev-only-do-not-override-1ae8k9u).ant-table-wrapper .ant-table-thead >tr>td, :where(.css-dev-only-do-not-override-1ae8k9u).ant-table-wrapper .ant-table-tbody >tr >th, :where(.css-dev-only-do-not-override-1ae8k9u).ant-table-wrapper .ant-table-tbody >tr >td{
+        background: #000;
+        color: var(--white);
+    }
+
+
+    :where(.css-dev-only-do-not-override-1ae8k9u).ant-pagination .ant-pagination-item-active a{
+        color: #000 !important;
+    }
+
+
+    .single_order{
+        .card_header,.card_body, .card_footer{
+            background: #000;
+            border-color: #000;
+        }
+        .card_footer ,.card_body{
+            border-top: 1px solid #7d7c7c !important;
+        }
+        .Gray_dark{
+            color: #fff !important;
+            opacity: .6 !important;
+        }
+        .White_dark{
+            color: #fff !important;
+        }
+        .sub_body{
+            background: var(--bg) !important;
+            
+        }
+    }
+
+
+    .CartItem{
+        :where(.css-dev-only-do-not-override-1ae8k9u).ant-btn.ant-btn-circle.ant-btn ,.Counter{
+            color: var(--white);
+        }
+    }
+
+
+    .StepsUi{
+        :where(.css-dev-only-do-not-override-1ae8k9u).ant-steps.ant-steps-vertical >.ant-steps-item .ant-steps-item-title, :where(.css-dev-only-do-not-override-1ae8k9u).ant-steps.ant-steps-vertical >.ant-steps-item .ant-steps-item-description{
+            color: var(--white);
+        }
+        :where(.css-dev-only-do-not-override-1ae8k9u).ant-steps.ant-steps-vertical >.ant-steps-item .ant-steps-item-icon{
+            border-color: var(--secondary);
+            span{
+                color: #fff !important;
+
+            }
+        }
+        :where(.css-dev-only-do-not-override-1ae8k9u).ant-steps .ant-steps-item-process>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title ,:where(.css-dev-only-do-not-override-1ae8k9u).ant-steps .ant-steps-item-process>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-description{
+            color: var(--secondary);
+        }
+        :where(.css-dev-only-do-not-override-1ae8k9u).ant-steps .ant-steps-item:not(.ant-steps-item-active):not(.ant-steps-item-process)>.ant-steps-item-container[role='button']:hover .ant-steps-item-icon, :where(.css-dev-only-do-not-override-1ae8k9u).ant-steps .ant-steps-item-finish .ant-steps-item-icon {
+            background: var(--bg);
+        }
+        :where(.css-dev-only-do-not-override-1ae8k9u).ant-steps .ant-steps-item-finish>.ant-steps-item-container>.ant-steps-item-tail::after{
+            background: var(--secondary);
+        }
+        :where(.css-dev-only-do-not-override-1ae8k9u).ant-steps .ant-steps-item:not(.ant-steps-item-active):not(.ant-steps-item-process) > .ant-steps-item-container[role=button]:hover .ant-steps-item-icon, .dark .StepsUi :where(.css-dev-only-do-not-override-1ae8k9u).ant-steps .ant-steps-item-finish .ant-steps-item-icon{
+            background: var(--secondary);
+        }
+        :where(.css-dev-only-do-not-override-1ae8k9u).ant-steps .ant-steps-item:not(.ant-steps-item-active):not(.ant-steps-item-process)>.ant-steps-item-container[role='button']:hover .ant-steps-item-icon .ant-steps-icon{
+            color: var(--white) !important;
+        }
+        :where(.css-1adbn6x).ant-steps .ant-steps-item-process>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title::after ,:where(.css-1adbn6x).ant-steps .ant-steps-item-wait .ant-steps-item-icon >.ant-steps-icon,:where(.css-1adbn6x).ant-steps .ant-steps-item-title::after{
+            background-color: var(--secondary) !important;
+        }
+        :where(.css-1adbn6x).ant-divider{
+            color: var(--fourthly) !important;
+        }
+        .anticon svg{
+            color: var(--white);
+        }
+    }   
+    .CartBody_Right{
+        :where(.css-dev-only-do-not-override-1ae8k9u).ant-btn >span, :where(.css-1adbn6x).ant-btn >span{
+            color: var(--white);
+        }
+    }
+    .CartBody_Left{
+        :where(.css-1adbn6x).ant-btn-default{
+            color: var(--white) !important;
+        }
+    }
+    .Adress_butttons .Payment_Button,.Buttons_Tr{
+        button:nth-child(2){
+            color: var(--white) !important;
+        }
+        color: var(--white) !important;
+    }
+    :where(.css-dev-only-do-not-override-1ae8k9u).ant-divider-horizontal{
+        background: var(--secondary);
+    }
+    .checked_quantity{
+        :where(.css-dev-only-do-not-override-1ae8k9u).ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover{
+            background: #4096ff;
+        }
+    }
+
+
+    // upload image text //
+    .ant-upload{
+        :where(.css-dev-only-do-not-override-1ae8k9u).ant-btn >span{
+            color: var(--white);
+        }
+    }
+    
+    
+    // categories image blend mode
+    .Categories{
+        .Categories_Item{
+            img{
+                mix-blend-mode: hard-light;
+            }
+        }
+    }
+    
+    // card categories name
+    .Card_Product_Top{
+        .Left{
+            color: var(--white) !important;
+        }
+    }
+    
+    // footer copy right
+    .footer_darkmode_white{
+        color: var(--white) !important;
+    }
+    .footer_darkmode_tefini{
+        color: var(--thirdly) !important;
+    }
+    
+    // partner image blend mode 
+    .partner_image, .join_family_image{
+        mix-blend-mode: hard-light !important;
+    }
+    
+    .TalabeeField{
+        :where(.css-1adbn6x).ant-btn >span , .anticon svg{
+            color: var(--white) !important;
+        }
+    }
+    // file input svg
+    .ant-upload-list-item-container{
+        .anticon svg {
+            color: var(--white) !important;
+        }
+    }
+    
+    .darkmode_bg{
+        width: 100% !important;
+        background: #000;
+    }
+
+    //pagination 
+    :where(.css-1adbn6x).ant-pagination{
+        color: var(--fourthly) !important;
+    }
+    :where(.css-1adbn6x).ant-pagination .ant-pagination-disabled .ant-pagination-item-link, :where(.css-1adbn6x).ant-pagination .ant-pagination-disabled:hover .ant-pagination-item-link{
+        color: var(--fourthly) !important;
+        .anticon svg{
+            color: var(--fourthly) !important;
+        }
+    }
+
+    :where(.css-1adbn6x).ant-pagination .ant-pagination-item a{
+        color: var(--black);
+        border-radius: 5px;
+        background: var(--white);
+    }
+
+    // antd result for verify 
+    :where(.css-1adbn6x).ant-result .ant-result-title, :where(.css-1adbn6x).ant-result .ant-result-subtitle{
+        color: var(--white);
+    }
+
+}
+
+:where(.css-dev-only-do-not-override-1ae8k9u).ant-steps .ant-steps-item-process>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title::after,:where(.css-dev-only-do-not-override-1ae8k9u).ant-steps .ant-steps-item-wait>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title::after{
+    background: var(--secondary);
+}
+
+:where(.css-dev-only-do-not-override-1ae8k9u).ant-steps .ant-steps-item-finish>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title::after{
+    background-color: var(fourthly) !important;
+}
+:where(.css-dev-only-do-not-override-1ae8k9u).ant-steps .ant-steps-item:not(.ant-steps-item-active)>.ant-steps-item-container[role='button'] .ant-steps-item-icon .ant-steps-icon{
+    color: var(--white);
+}
+
+:where(.css-dev-only-do-not-override-1ae8k9u).ant-steps .ant-steps-item-process .ant-steps-item-icon >.ant-steps-icon{
+    color: var(--fourthly);
+}
+:where(.css-dev-only-do-not-override-1ae8k9u).ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover{
+    background: inherit;
+    color: inherit;
+    background-color: inherit;
+}

@@ -1,0 +1,87 @@
+.CardItem {
+    display: flex !important; 
+    .ant-card-body{
+        @include Flex;
+        padding: 15px;
+    }
+    
+    .Card_Img{
+        img{
+            width: 70px;
+            transform: translateX(-6px);
+        }
+    }
+    .Card_Info{
+        h5{
+            font-size: 14px;
+            text-wrap: nowrap;
+            color: var(--black);
+        }
+        h6{
+            font-style: 10px;
+
+        }
+        strong{
+            font-size:14px;
+            color: var(--secondary);
+        }
+    }
+    .Card_Delete{
+        margin-left: 30px;
+        @include Flex;
+        
+
+    }
+
+}
+
+.Card_Counter{
+    @include Flex;
+    gap: 10px;
+    border-radius: 8px;
+
+    button {
+        text-align: center;
+        // width: 180px;
+    }
+.Counter{
+    width: 22px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.anticon-plus-circle svg, .anticon-minus-circle svg{
+    color:var(--primary);
+    font-size: 22px;
+   }
+   
+   /* Path */
+   .anticon-plus-circle svg path{
+    color:var(--primary);
+   }
+   
+   /* Ant icon */
+    .ant-btn-circle .ant-btn-icon{
+    color:var(--primary);
+   }
+}
+
+
+.ViewCart_Button{
+   margin-top: auto;
+    button{
+        background-color: var(--secondary) !important;
+        color: var(--bg) !important;
+        font-weight: bold !important;
+    }
+}
+/* Ant drawer wrapper body */
+
+
+
+.ant-drawer-body{
+    >div{
+        height: 100%;
+    }
+}

@@ -1,0 +1,118 @@
+.info_container {
+  @include Flex;
+  flex-direction: column;
+  padding-block: 50px;
+
+  h1 {
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--fourthly);
+  }
+
+  .body {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    margin-block: 10px;
+
+    .left {
+      width: 50%;
+      .about_image {
+        z-index: 99999;
+        width: 45vw;
+        height: 30vw;
+      }
+      .privacy_image{
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .right {
+      width: 50%;
+      margin-top: 60px;
+      h3 {
+        color: var(--secondary);
+        font-size: 30px;
+        font-weight: 600;
+        width: 100%;
+        margin-bottom: 10px;
+        span {
+          border-bottom: 3px solid var(--secondary);
+          color: var(--secondary);
+        }
+      }
+
+      p {
+        font-size: 22px !important;
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .info_container{
+    h1 {
+        font-size: 45px;
+      }
+  
+      .body {
+        .right h3 {
+          font-size: 20px;
+        }
+  
+        p {
+          font-size: 16px !important;
+        }
+      }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info_container{
+    .body {
+      flex-direction: column;
+      margin-block: 20px !important;
+      .left {
+          margin-inline: auto;
+          width: 90% !important;
+          .about_image{
+          margin-inline: auto;
+            height: 50vw !important;
+            width: 70vw !important;
+          }
+      }
+
+      .right {
+          margin-top: 0;
+          margin-inline: auto;
+          width: 90% !important;
+      }
+    }
+  }
+}
+  @media screen and (max-width: 480px) {
+    .info_container{
+
+      h1 {
+          font-size: 30px;
+        }
+    
+        .body {
+          .right h3 {
+            font-size: 18px;
+          }
+          .left {
+            .about_image{
+              height: 60vw !important;
+              width: 70vw !important;
+            }
+        }
+          p {
+            font-size: 12px !important;
+          }
+        }
+    }
+  }

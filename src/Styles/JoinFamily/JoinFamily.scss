@@ -1,0 +1,158 @@
+.join_family {
+    width: 100%;
+    min-height: 500px;
+    margin: 20px auto 50px auto;
+    display: flex;flex-direction: column;
+    align-items: center;
+    padding: 0 5vw;
+    gap: 50px;
+
+    .join_family_selcet{
+        width: 50%;
+        h2{
+            text-align: center;
+            color: var(--secondary);
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .TalabeeField{
+            color: var(--blacktowhite);
+        }
+    }
+
+    .join_family_data_section{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        .Join_family_data_display{
+            width: 48%;
+            h1{
+                font-size: 40px;
+                font-weight: bold;
+                color: var(--fourthly);
+            }
+            img{
+                width: 100%;
+            }
+        }
+        .join_family_inputs{
+            width: 48%;
+            display: flex ; flex-direction: column;
+            margin-top: 7px;
+            .inputs_contianer ,.file_container{
+                display: flex;flex-direction: column;
+                h1{
+                    color: var(--fourthly);
+                    font-size: 30px;
+                }
+                .TalabeeField{
+                    label{
+                        color: var(--blacktowhite);
+                    }
+                }
+            }
+        }
+    }
+
+    .LoadinButton{
+        background-color: var(--secondary) ;
+        color: var(--white);
+        font-weight: bold;
+        outline: none;
+        border: none;
+        margin-top: 20px;
+        &:hover {
+            background-color: var(--fourthly);
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+    .join_family {
+
+        .join_family_selcet{
+            width: 80%;
+            h2{
+                font-size: 40px;
+            }
+        }
+    
+        .join_family_data_section{
+            display: flex;justify-content: center; flex-direction: column;align-items: center;
+            width: 100%;
+            .Join_family_data_display{
+                width: 90%;
+                margin-bottom: 30px;
+                h1{
+                    font-size: 40px;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+            .join_family_inputs{
+                width: 90%;
+                .inputs_contianer ,.file_container{
+                    margin-bottom: 30px;
+                    h1{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+        .LoadinButton{
+            margin-top: 0px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .join_family {
+
+        .join_family_selcet{
+            width: 80%;
+            h2{
+                font-size: 30px;
+            }
+
+        }
+    
+        .join_family_data_section{
+            display: flex;justify-content: center; flex-direction: column;align-items: center;
+            width: 100%;
+            .Join_family_data_display{
+                width: 90%;
+                margin-bottom: 30px;
+                h1{
+                    font-size: 30px;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+            .join_family_inputs{
+                width: 90%;
+                .inputs_contianer ,.file_container{
+                    margin-bottom: 30px;
+                    h1{
+                        font-size: 19px;
+                    }
+                }
+            }
+        }
+        .LoadinButton{
+            margin-top: 0px;
+        }
+        .TalabeeField{
+            label{
+                font-size: 13px;
+            }
+        }
+    }
+}
+

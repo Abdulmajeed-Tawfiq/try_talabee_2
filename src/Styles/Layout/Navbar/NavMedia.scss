@@ -1,0 +1,227 @@
+
+
+@media screen and (max-width: 600px) {
+   .ant-drawer-body{
+      background: var(--bg);
+   }
+   .logo_drawer_container{
+      display: flex;
+      align-items: center;justify-content: start;
+      .logo_bg{
+         border-radius: 50%;
+         display: flex;justify-content: center;align-items: center;
+         height: 50px !important;
+         width: 58px !important;
+         background: #fff;
+         .logo_drawer{
+            width: 100% !important;
+         }
+      }
+   }
+   .Link_NavMenu{
+      img{
+      display: none !important;
+      }
+
+      h1{
+         font-size: 20px;
+         font-weight: bold;
+         color: var(--blacktowhite);
+         margin-bottom: 16px;
+         @include underLineText(var(--primary), var(--secondary));
+         padding-bottom: 5px;
+         span{
+            color: var(--secondary);
+         }
+      }
+   }
+      .Menu_Group,.MidBar_Left,.MidBar_Right,.NavMenus,.BottomBar{
+         display: none;
+      }
+   .ViewCart{
+      margin-left: -10px;
+      .Badge_Button{
+         .Cart_Icon{
+            width: 50px;
+            height: 50px;
+            background: var(--bg2);
+            border-radius: 50%;
+            @include Flex;
+            svg{
+               width: 30px;
+               height: 25px;
+            }
+        }
+      }
+   }
+   .MediaMenu{
+   display: flex;
+   gap: 20px;
+   align-items: center;
+   height: 55px;
+   }
+   .FnBar{
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: center;
+      .MidBar{
+         min-width: 100%;
+         gap: 10%;
+         padding-inline: 6%;
+         align-items: flex-start;
+         .MenuButton{
+            margin-left: 10px;
+         background: var(--primary) !important;
+            height: 41px;
+
+         span {
+            margin: 0;
+         }
+         }
+      }
+   }              
+}
+
+@media screen and (max-width: 400px) {        
+   .FnBar{
+      display: flex;
+      flex-direction: column;
+   }
+   .ViewCart{
+      display: inline !important;
+   }  
+}
+
+
+.Top_Section_Right{
+   display: flex; align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   h4{
+      font-weight: bold;
+      font-size: .3em !important;
+   }
+   .Phone1{
+      height: 50px;
+      width: 50px;
+      background: #f5f5f5;
+      line-height: 50px;
+      text-align: center;
+      border-radius: 50%;
+      margin-right: 20px;
+      color: var(--primary);
+   }
+   svg{
+      font-size: 1.2vw;  
+   }
+   .Phone2{
+      width: 100%;
+   right: 7px;
+      align-items: center;
+      display: flex;justify-content: center;
+      h3{
+         font-weight: 900;
+         text-align: center;
+         font-size: .6em;
+      }
+   }
+}
+
+@media screen and (max-width: 750px) {
+   .NavMenus{
+      padding-left : 5vw !important;
+   }
+}
+
+@media screen and (max-width: 450px) {
+   .Top_Section_Right{
+   display: none;
+   }
+}
+
+.ar{
+@media screen and (max-width: 600px) {
+   
+   .logo_drawer_container{
+      display: flex;justify-content: space-between;
+      align-items: center;
+      h1{
+          line-height: 25px;
+         font-size: 15px;
+         font-weight: bold;
+         color: var(--primary);
+      }
+      .logo_bg{
+         border-radius: 50%;
+         display: flex;justify-content: center;align-items: center;
+         height: 40px;width: 40px;
+         .logo_drawer{
+            width: 80%;
+         }
+      }
+   }
+   .Menu_Group,.MidBar_Left,.MidBar_Right,.NavMenus,.BottomBar{
+      display: none;
+   }
+                 
+   .Menu_anv{
+      width: 100%;
+      padding-bottom: 20px;
+   }
+   .ViewCart{
+      margin-left: -10px;
+      .Badge_Button{
+         top: 10% !important;
+      }
+   }
+.FnBar{
+   display: flex;
+   flex-direction: row-reverse;
+   align-items: center;
+   justify-content: center;
+   .MidBar{
+      min-width: 100%;
+      gap: 10%;
+      padding-inline: 6%;
+      align-items: flex-start;
+      .MenuButton{
+         background: var(--primary) !important;
+            height: 41px;
+      }
+   }
+}                
+}}
+
+
+
+@media screen and (max-width:890px) {
+   .ar {
+      .NavMenus {
+      padding-left: 0 !important;
+      font-size: 6px !important;
+      }
+  }
+
+   .NavMenus{
+      padding-left: 10vw !important;
+      flex: 80%;
+      gap: 3%;
+      .Link{
+          h1{
+             font-size: 16px;
+             padding-bottom: 5px;
+            }
+         }
+  }
+  .DropdownMenu {
+     // width: 70px !important;
+     font-size: 14px !important;
+  }
+}
+      // control the width of the menu when the screen is small
+     @media screen and (width < 725px ) and (width > 600px) {
+      .BottomBar a h1 {
+         font-size: 12px !important;
+      }
+     }   

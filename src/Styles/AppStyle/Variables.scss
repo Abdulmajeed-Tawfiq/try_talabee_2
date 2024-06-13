@@ -1,0 +1,86 @@
+
+
+
+  
+:root {
+    --primary: #35c6c2;
+    --secondary : #d90217;
+    --thirdly:#81dcda;
+    --fourthly:#35c6c2;
+    --fifthly:#35c6c2;
+    --sixthly:#fff;
+    --seven:#d90217;
+    --eight:rgba(0, 0, 0, 0.45);
+    --nine:#2ecc71;
+    --ten: #f0f0f0;
+    --eleven: #333;
+    --twelve: #d3d3d3;
+    --textGray: #757575;
+    --hoverSec: #b20115;
+
+
+
+    --text: black;
+
+    --bg: #fafafa;
+    --bg2:  #e7ecf2;
+    --bg3:#fafafa;
+    --bg4:#e7ecf2;
+    --bg5:#e7ecf2;
+    --bg6:#e7ecf2;
+    
+    --border:#647285cb;
+    --border2:rgba(0,0,0,0.3);
+    --shadow: rgba(0, 0, 0, 0.15);
+    
+    --gray : rgb(207, 210, 214);
+    --graytoblack : rgb(207, 210, 214);
+    --whiteandblack:#fff;
+    --blacktowhite:#000;
+    --white:#fff;
+    --black:#000;
+    
+    --svgAbout: #d90217;
+    --svgAbout2: #35c6c2;
+    
+}
+
+:root:has(.dark) {
+    --primary: #000;     
+    --secondary: #d90217;   
+    --thirdly:#35c6c2;
+    --fourthly:#35c6c2;
+    --fifthly:#35c6c2;
+    --sixthly:#35c6c2;
+    --seven:#35c6c2;
+    --eight:#Fff;
+    
+    
+    --text: #ffffff; 
+    
+    --bg: #1f1f1f;          
+    --bg2: #000;  
+    --bg3:#000;
+    --bg4:#1f1f1f;
+    --bg5:#35c6c2;
+    --bg5:#e7ecf2;
+
+    
+    --border:#fff;
+    --border2:#35c6c2;
+    --shadow: #ffffff26; 
+    
+    --white:#fff;
+    --black:#000;
+    --gray: #a0aec0;  
+    --graytoblack : #000;
+    --whiteandblack:#000;
+    --blacktowhite:#fff;
+
+    --svgAbout: #d90217;
+    --svgAbout2: #fff;
+    
+}
+
+
+    

@@ -1,0 +1,587 @@
+   .Products{
+        width: 100%;
+      display: flex;
+      flex-direction: column;
+      min-height: 350px;
+      .Products_Header{
+         width: 90%;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin: 30px auto;
+         @include Shadow;
+         padding:  18px 4vw;
+         border-radius: 9px;
+         background: var(--bg);
+         .Products_Header_Left{
+            @include Flex;gap: 1.6vw;
+            font-size: 2vw;
+            .Cart_Icon{
+               display: none;
+            }
+      }
+
+   .Products_Header_Right{
+            @include Flex; gap: 1.6vw;
+            font-size: 20px;
+            .Cart_Icon{
+               width: 20px;
+               display: none;
+            }
+         }
+  }
+  .secondary{
+      color: var(--secondary);
+  }
+  
+  .Products_Body{
+      display: flex; 
+          padding:  18px 5vw;
+          gap: 20px;
+  
+  
+      .ProductsFilter{
+          flex: 25%;
+           @include Shadow;
+      padding:  18px 2vw 50px !important;
+      border-radius: 9px;
+      background: var(--bg);
+      position: relative;
+      top: -10%;
+   }
+         .ProductsCards{
+               flex: 75%;
+               display: flex;
+               flex-wrap: wrap;
+               gap: 20px;
+               
+      }
+  }
+  
+  .ProductsFilter{
+      max-height: 750px;
+      >div{
+          display: flex;
+          width: 100%;
+          margin-block: 20px;
+          gap: 5px;
+      }
+      .Rate{
+                  margin-block: 0 !important;
+  
+  
+      }
+  }
+  .ProductPagination{
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+      background: var(--bg);
+  
+      @include Shadow;
+      padding: 20px;
+      border-radius: 5px;
+      height: fit-content;
+      
+  }
+  
+  
+@media screen and (max-width: 700px) {
+      
+   .ant-pagination-options{
+         a{
+            font-size: 10px !important;
+         }
+   }
+  .ProductsFilter{
+      display: none;
+  }
+  .Shortby,.ant-select{
+      display: none;
+  }
+   .Cart_Icon{
+      display: flex !important;
+      background-color: transparent;
+      width: 100px;
+      transition: all .2s ease-in-out;
+      justify-content: space-evenly;
+      &:hover {
+         svg {
+            color: var(--primary) !important;
+         }
+      }
+      span{
+         text-align: end !important;
+         font-size: 16px;
+         font-weight: 600;
+         padding-right: 10px;
+      }
+         svg{
+            color: var(--secondary) !important;
+            width: 20px;
+            transition: inherit;
+      } 
+   }
+  
+  }
+  
+  
+  .showfillter {
+      .ProductsFilter{
+      display: block !important;
+  }
+      .ProductsFilter_header{
+              display: none !important;
+      }
+  }
+  
+}
+.Products{
+    .normalCard{
+        margin-inline: auto;
+    }
+    .Card_Product{
+        width: 260px;
+        height: 340px;
+        background-color:var(--bg);
+        color:var(--text);
+        display: flex;
+        position: relative;
+        border-radius: 8px;
+        @include Shadow;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        margin-inline : auto;
+        .unset,.ant-card-body{
+          all: unset !important;
+        }
+        .Card_Product_Bottom{
+         .product_name{
+            font-size: 14px !important;
+         }
+      }
+          
+        .Card_Product_Top{
+          position: relative;
+          z-index: 9;
+           .Left{
+             position: absolute;
+             left: 0;
+             background-color: var(--secondary);
+             padding: 3px 10px;
+             color: var(--bg);
+             border-radius: 3px;
+             cursor: pointer;
+             font-size: 12px;
+             font-weight: bold;
+             min-width: 70%;
+           }
+           .Right{
+             position: absolute;
+             right: 0;
+             color: var(--secondary);
+             cursor: pointer;
+             display: flex;
+             font-size: 20px;
+             flex-direction: column;
+             gap: 10px;
+             svg{
+                opacity: 0;
+                &:hover{
+                   opacity: 1;
+                }
+             }
+           }
+    
+        }
+        .Card_Product_Mid{
+            overflow: hidden;
+            flex: 80%;
+            img{
+               width: 70%;
+               height: 100%;
+               object-fit: cover;
+               z-index: 1;
+               &:hover{
+                  scale: 1.2;
+                  cursor: pointer;
+               }
+            }
+        }
+
+        .Card_Product_Bottom{
+            padding-inline: 10px;
+            flex: 20%;
+            strong{
+               color: var(--secondary);
+
+            }
+            small{
+               text-decoration: line-through;
+               color: var(--blacktowhite);
+            }
+            >span{
+               display: flex; justify-content: space-between; align-items: center;
+            .AddProduct{
+                  border: 1px solid var(--secondary);
+                  border-radius: 10%;
+                  height: 25px; width: 25px; @include Flex;
+                  svg{
+                     color: var(--secondary);
+                  }
+               }
+            }
+        }
+         &:hover{
+         .Right{
+            svg{
+               opacity: .2;
+               &:hover{
+                  opacity: 1;
+               }
+            }
+         }
+      }
+   }
+        
+.ProductsCards2{
+   flex: 75%;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   .FullCard{
+      .Card_Product{
+         width: 100%;
+         height: 200px;
+         background-color:var(--bg);
+         color:var(--text);
+         display: flex;
+         flex-direction: row;
+         position: relative;
+         border-radius: 8px;
+         @include Shadow;
+         display: flex;
+         justify-content: center;
+         padding: 20px;
+         .unset,.ant-card-body{
+         all: unset !important;
+         }
+  
+      .Left{
+      text-wrap: nowrap;
+      min-width: 100px;
+      }
+      .Card_Product_Mid{
+            overflow: hidden;
+            flex: 10%;
+            max-width: 270px;
+            img{
+               width: 250px;
+               height: 100%;
+               object-fit: cover;
+                  &:hover{
+                     scale: 1.2;
+                  }
+                     cursor: pointer;
+            }
+      } 
+   }
+}
+
+.Card_Product_Bottom{
+display: flex;
+flex-direction: column;
+justify-content: center;
+  padding-inline: 10px;
+  flex: 10%;
+  >div{
+     font-size: 2.3vw;
+  }
+   strong{
+      color: var(--secondary);
+
+   }
+   small{
+      text-decoration: line-through;
+      color: var(--blacktowhite);
+   }
+   >span{
+      display: flex; justify-content: space-between; align-items: center;
+      .AddProduct{
+         border: 1px solid var(--secondary);
+         border-radius: 10%;
+         height: 25px; width: 25px; @include Flex;
+         svg{
+            color: var(--secondary);
+         }
+      }
+   }
+}
+        
+ .Right{
+   display: none !important; 
+   }
+    .AddProduct{
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      border: 1px solid var(--secondary);
+      border-radius: 10%;
+      height: 25px; width: 25px; @include Flex;
+      svg{
+         color: var(--secondary);
+
+      }
+   }
+}
+}
+
+
+.Products{
+    @media screen and (max-width: 910px)  {
+        .Card_Product{
+     width: 150px;
+     height: 220px;
+     background-color:var(--bg);
+     color:var(--text);
+     display: flex;
+     position: relative;
+     border-radius: 8px;
+     @include Shadow;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     padding: 10px;
+     .unset,.ant-card-body{
+       all: unset !important;
+     }
+       
+         
+  
+     .Card_Product_Top{
+       position: relative;
+       z-index: 9;
+        .Left{
+          position: absolute;
+          left: 0;
+          background-color: var(--secondary);
+          padding: 3px 10px;
+          color: var(--bg);
+          border-radius: 3px;
+          cursor: pointer;
+          font-size: 8px;
+          font-weight: bold;
+          top: -9px;
+        }
+        .Right{
+          position: absolute;
+          right: 0;
+          color: var(--secondary);
+          cursor: pointer;
+          display: flex;
+          font-size: 15px;
+          flex-direction: column;
+          gap: 10px;
+          svg{
+             opacity: 0;
+             &:hover{
+                opacity: 1;
+             }
+ 
+ 
+          }
+        }
+ 
+     }
+     .Card_Product_Mid{
+         overflow: hidden;
+         flex: 60%;
+         img{
+            width: 70%;
+            height: 100%;
+            object-fit: cover;
+               &:hover{
+                  scale: 1.2;
+                  cursor: pointer;
+               }
+         }
+ 
+     } 
+     .Card_Product_Bottom{
+       padding-inline: 5px;
+       flex: 20%;
+       font-size: 1.7vw;
+       .ant-rate {
+          font-size: 1.7vw !important;
+       }
+      strong{
+         color: var(--secondary);
+
+      }
+      small{
+         text-decoration: line-through;
+         color: var(--blacktowhite);
+      }
+      >span{
+         display: flex; justify-content: space-between; align-items: center;
+         .AddProduct{
+            border: 1px solid var(--secondary);
+            border-radius: 10%;
+            height: 20px; width: 20px; @include Flex;
+            svg{
+               color: var(--secondary);
+            }
+         }
+      }
+     }
+      &:hover{
+      .Right{
+         svg{
+            opacity: .2;
+            &:hover{
+               opacity: 1;
+            }
+         }
+      }
+   }
+}
+     }
+}
+@media screen and (max-width: 900px)  {
+   .Products{
+      .ProductsCards2{
+          flex: 100% !important;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          justify-content: center;
+          align-items: stretch;
+
+            .FullCard{
+
+    .Card_Product{
+      height: 120px;
+      width: 100%;
+      background-color:var(--bg);
+      color:var(--text);
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      border-radius: 8px;
+      @include Shadow;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      .unset,.ant-card-body{
+         all: unset !important;
+      }
+         
+      .Left{
+         text-wrap: nowrap;
+         min-width: 100px;
+      }
+         .Card_Product_Mid{
+            overflow: hidden;
+            flex: 10%;
+            max-width: 20vw;
+            margin-right: 30px !important;
+            img{
+               margin-left: 5px;
+               width: 18vw;
+                  &:hover{
+                     scale: 1.2;
+                  }
+                     cursor: pointer;
+            }
+      }    
+   }
+
+}
+.Card_Product_Bottom{
+ display: flex;
+ flex-direction: column;
+ justify-content: start;
+    padding-inline: 10px;
+    flex: 10%;
+    >div{
+       font-size: 3vw;
+       text-wrap: nowrap;
+    }
+   strong{
+      color: var(--secondary);
+      font-size: 2.2vw;
+   }
+   .ant-rate{
+      font-size: 3vw !important;
+   }
+   small{
+      text-decoration: line-through;      
+      font-size: 2vw;
+      color: var(--blacktowhite);
+   }
+   >span{
+      .AddProduct{
+         border: 1px solid var(--secondary);
+         border-radius: 10%;
+         height: 25px; width: 25px; 
+         svg{
+            color: var(--secondary);
+         }
+      }
+   }
+}
+          
+   .Right{
+     display: none !important; 
+     }
+      .AddProduct{
+         position: absolute;
+         bottom: 20px;
+         right: 20px;
+         border: 1px solid var(--secondary);
+         border-radius: 10%;
+         height: 25px; width: 25px; @include Flex;
+         svg{
+            color: var(--secondary);
+         }
+      }
+  }
+   }
+
+} 
+         
+@media screen and (max-width: 460px){
+   .Products .Card_Product {
+      .Card_Product_Bottom{
+         .product_name, .ant-rate , strong{
+            font-size: 14px !important;
+         }
+         .ant-rate{
+            padding-bottom: 10px;
+         }
+         small{
+            padding-left: 3px;
+            font-size: 9px;
+         }
+      }
+   }
+   .Products .ProductPagination {
+      padding: 10px;
+   }
+}
+
+
+.ar{
+   .Products{
+      .Card_Product{
+          .Card_Product_Top{
+             .Left{
+               right: 0 !important;
+             font-size: 12px !important;
+             }
+          }
+      }
+  }
+}

@@ -1,0 +1,155 @@
+.ant-drawer-body{
+    overflow-x: hidden !important;           
+}
+.BottomBar{
+    padding-bottom: 15px;
+    display: flex; justify-content: space-between; align-items: center;
+    padding-inline: 3vw;
+    // gap: 5%;
+    border-bottom: 1px solid var(--bg2);
+
+}
+
+.DropdownMenu{
+    width: 100%;
+    flex: 15%;
+    background-color: var(--bg2) !important;
+    color: var(--text);
+    padding: 8px 20px;
+    display: flex; justify-content: space-between; align-items: center;
+    .MenuItems{
+        width: 100%;
+    }    
+}
+.NavMenus{
+    padding-left: 18vw;
+    flex: 75%;
+    display: flex; justify-content: end; align-items: end;
+    gap: 5%;
+    margin-block: auto;
+    .Link{
+        font-size: 1.4vw;
+        h1{
+            text-transform:capitalize;
+            font-size: 17px;
+            @include underLineText(var(--blacktowhite), var(--secondary));
+            margin-bottom: 0;
+            padding-bottom: 5px;
+        }
+    }
+    .Glow_link{
+        color: var(--secondary);
+        h1{
+            font-weight: 900;
+        }
+    }
+}
+
+.ant-dropdown-menu{
+    background-color:var(--bg2) !important;
+    color:var(--primary) !important;
+   }
+   
+   /* Ant Unknowndown menu submenu title */
+    .ant-dropdown-menu-submenu-title{
+    color:var(--blacktowhite) !important;
+    // display: none;
+   }
+   
+   /* Span Tag */
+    .ant-dropdown-menu-submenu-expand-icon span{
+    color:var(--blacktowhite) !important;
+   }
+   div .ant-dropdown-placement-bottomLeft ul{
+    margin-top:10px !important;
+    color: var(--blacktowhite) !important;
+   }
+   .ant-dropdown-menu-title-content{
+    color: var(--blacktowhite);
+   }
+   
+   
+   /* Ant Unknowndown menu submenu title */
+.ant-dropdown-placement-bottomLeft .ant-dropdown-menu .ant-dropdown-menu-submenu-title{
+    padding-bottom:12px;
+   }
+   
+   
+   div .ant-dropdown-menu-submenu-placement-rightTop ul{
+    margin-left:11px;
+    min-width: 120px;
+   }
+   
+  
+   .ar{
+    .ant-drawer-body{
+        overflow-x: hidden !important;           
+    }
+    .BottomBar{
+        padding-bottom: 15px;
+        display: flex; justify-content: space-between; align-items: center;
+        padding-right: 5vw;
+        gap: 5%;
+        border-bottom: 1px solid var(--bg2);
+    }
+    
+    .DropdownMenu{
+        width: 100%;
+        flex: 15%;
+        background-color: var(--bg2) !important;
+        color: var(--text);
+        padding: 8px 20px;
+        display: flex; justify-content: space-between; align-items: center;
+        .MenuItems{
+            width: 100%;
+        }
+         
+    }
+    .NavMenus{
+        padding-left: 13vw;
+        flex: 75%;
+        display: flex; justify-content: start; align-items: end;
+        gap: 5%;
+        padding-left: 0 !important;
+        .Link{
+            font-size: 13px !important;
+            h1{
+                text-transform:capitalize;
+                // font-size: 18px;
+            }
+            
+        }
+    }
+    
+    .ant-dropdown-menu{
+        background-color:var(--bg2) !important;
+        color:var(--primary) !important;
+       }
+       
+       /* Ant Unknowndown menu submenu title */
+        .ant-dropdown-menu-submenu-title{
+        color:var(--primary) !important;
+       }
+       
+       /* Span Tag */
+        .ant-dropdown-menu-submenu-expand-icon span{
+        color:var(--primary) !important;
+       }
+       div .ant-dropdown-placement-bottomLeft ul{
+        margin-top:10px !important;
+       }
+       
+       
+       /* Ant Unknowndown menu submenu title */
+    .ant-dropdown-placement-bottomLeft .ant-dropdown-menu .ant-dropdown-menu-submenu-title{
+        padding-bottom:12px;
+       }
+       
+       
+       div .ant-dropdown-menu-submenu-placement-rightTop ul{
+        margin-left:11px;
+        min-width: 120px;
+       }
+       
+      
+   }

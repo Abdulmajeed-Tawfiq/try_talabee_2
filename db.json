@@ -1,0 +1,48 @@
+{
+  "example":[
+    {
+      "type": "Bernadette O'Reilly",
+      "href": "/Dennis Von",
+      "data": [
+        
+      ],
+      "count": 48,
+      "id": "10"
+    },
+    {
+      "type": "Jeanette",
+      "href": "/Patsy",
+      "data": [
+    
+      ],
+      "count": 32613,
+      "id": "12"
+    },
+    {
+      "type": "Marion",
+      "href": "/MissLuis",
+      "data": [
+      
+      ],
+      "count": 71846,
+      "id": "13"
+    },
+    {
+      "type": "Jean",
+      "href": "/Georgia",
+      "data": [
+   
+      ],
+      "count": 8268,
+      "id": "14"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@adamin.com",
+      "password": "password",
+      "token": "token"
+    }
+  ]
+}

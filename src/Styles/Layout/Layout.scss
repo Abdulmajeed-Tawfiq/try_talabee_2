@@ -1,0 +1,79 @@
+.Footer{
+    width: 100%;
+    .Footer_social{
+        gap: 20px;
+        .Media_Icon{
+            margin-bottom: 0 ;
+            display: flex; 
+            justify-content: start;
+            padding-left: 0 !important;       
+            gap: 20px;
+            svg{
+                cursor: pointer;
+                
+            }
+            li{
+                all: unset;
+            }
+        }
+    }
+    .Footer_Header{
+        background-color: var(--secondary);
+        color: var(--bg);
+        font-weight: bold;
+        padding: 15px;
+        text-align: center;
+        font-size: 22px;
+    }
+    .Footer_Bg{
+        background-color: var(--primary);
+        color: var(--bg);
+        font-size: 20px;
+    }
+}
+.Header{
+    .MenuChange,.ant-btn  {
+        color: var(--text);
+        background: var(--secondary) !important;
+        transition: all .2s ease-in-out;
+        &:hover{
+            background: var(--secondary) !important;
+            scale: 1.05;
+        }
+    }
+}
+.ar{
+    .Media_Icon{
+        justify-content: end !important;
+    }
+}
+.Layout_Body{
+    background: var(--bg2);
+}
+.without_background{
+    background: transparent;
+}
+.ant-steps-label-horizontal .ant-steps-item .ant-steps-item-icon{
+    background-color:var(--secondary);
+    border-color:var(--secondary);
+   }
+
+   .ant-radio-inner{
+    background: var(--secondary) !important;
+    border-color:  var(--secondary) !important;
+   }
+   .Buttons_Tr{
+    display: flex;
+    gap: 30px;
+   }
+   .primary{
+       margin-top: 5px;
+    background: var(--secondary);
+    color: var(--bg);
+   }
+
+@media screen and (max-width:770px) {
+    .Footer_social{
+        @include Flex ;
+    }
+}

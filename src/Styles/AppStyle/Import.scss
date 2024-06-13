@@ -1,0 +1,48 @@
+
+@import './Variables.scss';
+@import './Mixing.scss';
+@import './App.scss';
+@import '../Layout/Layout.scss';
+@import '../Auth/Auth.scss';
+@import '../Auth/Verify.scss';
+@import '../Layout/Table.scss';
+
+
+@import '../Home/Home.scss';
+@import '../Layout/Navbar/Header.scss';
+@import '../Layout/Navbar/MidBar.scss';
+
+@import '../Ui/Card.scss';
+@import'../Layout/Navbar/BottomBar.scss';
+@import '../Home/Card.scss';
+@import '../Home/Product.scss';
+@import '../Home/Store.scss';
+
+@import '../Home/Cart.scss';
+@import '../Home/Products.scss';
+@import '../Home/Categories.scss';
+@import '../Layout/Navbar/NavMedia.scss';
+@import '../Home/HomeMedia.scss';
+@import '../Home/wishList.scss';
+
+@import '../Contact/Contact.scss';
+
+@import '../Order/Orders.scss';
+
+@import '../Info/Info.scss';
+
+@import url('../DarkMood/DarkStyle.scss');
+
+@import'../Layout/HeaderComponent.scss';
+
+@import '../profile/Profile.scss';
+
+@import '../JoinFamily/JoinFamily.scss';
+@import '../category/categoryCard.scss';
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../../../public/fonts/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

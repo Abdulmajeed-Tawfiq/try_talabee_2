@@ -1,0 +1,879 @@
+.BigAds{
+    width: 90%;
+    img{
+        object-fit: fill !important; 
+    }
+} 
+
+   @media screen and (max-width: 600px) {
+               
+    .HeroSection_Ads{
+        display: none !important;
+    }       
+    .BigAds{
+        display: flex; flex-direction: column;
+        img{
+            object-fit: fill !important; 
+        }
+    }     
+    .SubTitle{
+        z-index: 9999 !important;
+        padding:  10px 10px 10px 10px;
+      
+        font-size: 20px;
+        padding: 5px;
+
+        .seeMore {
+            background-color: var(--primary);
+            border-radius: 6px;
+            color: var(--white);
+            padding: 5px 10px;
+            font-size: 12px;
+
+            a {
+                font-weight: normal;
+            }
+        }
+   
+      }
+      .HeroSection{
+        height: 54vw;
+        margin-bottom: 30px;
+
+      }
+ .HeroSection_Carousel{
+        width: 100% !important;
+        height: 100%;
+            img{
+                margin-top: 5px;
+            margin-inline: 20px;
+                width: 100%;
+                height: 54vw !important;
+
+                object-fit: fill !important;
+            }
+  
+  }       
+  .banner_Container{
+    position: relative;
+    .banner1{
+        width: 100% !important;
+        object-fit: fill !important;
+    }
+    .banner_Info{
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        h1{
+            font-size: 6.5vw;
+        }
+        h2{
+            font-size: 5vw;
+            font-weight: bold;
+        }
+        strong{
+            color: var(--secondary);
+        }
+        a{
+            font-size: 4vw;
+        }
+    }
+}
+    
+        .special_properties{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw auto;
+    background: transparent !important;
+    box-shadow: none !important;
+            flex-wrap: wrap;
+
+    svg{
+        font-size: 4.4vw;
+        margin-top: 5px;
+    }
+    .special_property{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        padding-inline: 40px;
+        border-right: none !important;
+        margin-top: 15px;
+        padding: 10px 20px;
+        background: var(--bg);
+        @include Shadow;
+        width: 100%;
+        span {
+            margin: auto;
+            width: 40px;
+        }
+        h5 {
+            font-size: 24px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        p {
+            font-size: 20px;
+            text-align: center;
+        }
+        svg {
+            font-size: 40px;
+        }
+    }
+    .Towspecial_property{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    h5{
+        font-size: 2.4vw;
+        text-wrap: nowrap;
+        margin-bottom: 0;
+    }
+    p{
+        font-size: 2vw;
+        text-wrap: nowrap;
+    }
+    .special_property_last{
+        border-right: none;
+    }
+}
+}
+
+  
+//////// i know :( 
+/// but sorry i have to :( :(
+   @media screen and (max-width: 1000px) {
+    .Moves_Ads{
+        .Moves_Ads_Right_Text {
+            &::before {
+                top: 10% !important;
+            }
+        }
+    }
+  
+}
+
+@media screen and (max-width:900px) {
+    .BigAds{
+        display: flex; flex-direction: column;
+        margin-inline: auto !important;
+        img:nth-child(1){
+            width: 96% !important;
+            line-height: 30px;
+        }
+    } 
+}
+
+@media screen and (max-width: 700px) {
+    .Moves_Ads{
+        .Moves_Ads_Right_Text {
+            font-size: 10px;
+          
+        }
+    }
+
+    .Moves_Ads_Left{
+        width: 35vw;
+        height: 50px !important;
+        display: flex; justify-content: center; align-items: center;
+        z-index: 5;
+        position:relative;
+        left:-7vw;
+        font-weight: bold;
+        color: var(--bg);
+        font-size: 2vw;
+        padding-left: 4vw;
+        position: relative;
+        &::before{
+        transform: skewX(-35deg);
+
+            z-index: -1;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--secondary);
+
+        }
+}
+.Moves_Ads_Right{
+    text-align: right;
+    width: 60%;
+    &::before {
+    font-size: 2vw;
+    inset: 5px;
+    z-index: 3;
+    content: '';
+    position: absolute;
+    border: 1px dashed #fff;
+    }
+}
+
+.Moves_Ads_Right_Text {
+    background-color: transparent;
+    color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    overflow: hidden; 
+    position: relative;
+    &::before {
+      content: attr(data-text); 
+      position: absolute;
+      top: -40% !important;
+    white-space: nowrap;
+    animation: moveText 15s linear infinite;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 2vw;
+    }
+    
+    @keyframes moveText {
+    from {
+      right: -44vw;
+    }
+    to {
+      right: 60vw; 
+    }
+    }
+    
+    }
+
+}
+
+
+
+@media screen and (max-width: 450px) {
+  .Moves_Ads .Moves_Ads_Left{
+            left: -9vw !important;
+  }
+
+  .BigAds{
+    padding: 10px 0vw;
+    gap: 20px;
+    margin-block: 10px;
+    >div{
+        flex: 50%;
+        height: 150px;
+        img{
+            width: 100%;
+            height: 150px;
+        }
+    }
+      .BigAds_Info{
+        padding: 20px;
+        top: 0;
+        h6{
+            font-size: 3vw;
+        }
+        h3{
+            font-size: 4vw;
+        }
+        >div{
+             gap: 5px;
+            strong{
+                font-size: 1.4vw;
+            }
+            p{
+                font-size: 3vw;
+            }
+        }
+    } 
+       
+  }
+}
+
+
+.ar{
+    
+   @media screen and (max-width: 600px) {
+               
+    .HeroSection_Ads{
+        display: none !important;
+    }       
+    
+    .SubTitle{
+        z-index: 9999 !important;
+        padding:  10px 10px 10px 10px;
+        font-size: 20px;
+      }
+      .HeroSection{
+        height: 54vw;
+        margin-bottom: 30px;
+
+      }
+ .HeroSection_Carousel{
+        width: 100% !important;
+        height: 100%;
+            img{
+                margin-top: 5px;
+                margin-inline: 0px !important;
+                width: 100%;
+                height: 54vw !important;
+
+                object-fit: fill !important;
+            }
+  
+  }       
+  .banner_Container{
+    position: relative;
+    .banner1{
+        width: 100% !important;
+        object-fit: fill !important;
+    }
+    .banner_Info{
+        position: absolute;
+        top: 10%;
+        left: 8%;
+        width: 60%;
+        h1{
+            font-size: 6.5vw;
+        }
+        h2{
+            font-size: 5vw;
+            font-weight: bold;
+        }
+        strong{
+            color: var(--secondary);
+        }
+        a{
+            font-size: 4vw;
+        }
+    }
+}
+    
+        .special_properties{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw auto;
+    background: transparent !important;
+    box-shadow: none !important;
+            flex-wrap: wrap;
+
+    svg{
+        font-size: 4.4vw;
+        margin-top: 5px;
+    }
+    .special_property{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        padding: 20px 40px !important;
+        border-right: none !important;
+        margin-top: 15px;
+        padding: 10px 20px;
+        background: var(--bg);
+        width: 100%;
+        @include Shadow;
+        span {
+            margin: auto;
+            width: 40px;
+        }
+        h5 {
+            font-size: 24px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        p {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 0;
+        }
+        svg {
+            font-size: 40px;
+        }
+
+    }
+    .Towspecial_property{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    h5{
+        font-size: 2.4vw;
+        text-wrap: nowrap;
+        margin-bottom: 0;
+    }
+    p{
+        font-size: 2vw;
+        text-wrap: nowrap;
+    }
+    .special_property_last{
+        border-right: none;
+    }
+}
+}
+
+  
+//////// i know :( 
+/// but sorry i have to :( :(
+   @media screen and (max-width: 1000px) {
+    .Moves_Ads{
+        .Moves_Ads_Right_Text {
+            &::before {
+                top: 10% !important;
+            }
+        }
+    }
+  
+}
+
+@media screen and (max-width: 700px) {
+    .Moves_Ads{
+        .Moves_Ads_Right_Text {
+            font-size: 10px;
+          
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 450px) {
+  .Moves_Ads .Moves_Ads_Left{
+            left: 10vw !important;
+  }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media screen and (max-width: 1000px) {
+//     .Moves_Ads{
+//         .Moves_Ads_Right_Text {
+//             &::before {
+//                 top: 10% !important;
+//             }
+//         }
+//     }
+  
+// }
+
+
+// @media screen and (max-width: 700px) {
+//     .Moves_Ads{
+//         .Moves_Ads_Right_Text {
+//             font-size: 10px;
+          
+//         }
+//     }
+
+//     .Moves_Ads_Left{
+//         width: 35vw;
+//   height: 50px !important;
+//   // background: var(--secondary);
+//   display: flex; justify-content: center; align-items: center;
+//   z-index: 5;
+//   position:relative;
+//   left:-7vw;
+//   font-weight: bold;
+//   color: var(--bg);
+//   font-size: 2vw;
+//   padding-left: 4vw;
+//   position: relative;
+//   &::before{
+//   transform: skewX(-35deg);
+
+//       z-index: -1;
+//       content: "";
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       width: 100%;
+//       height: 100%;
+//       background-color: var(--secondary);
+
+//   }
+
+
+
+// }
+// .Moves_Ads_Right{
+
+// text-align: right;
+// width: 60%;
+// &::before {
+//   font-size: 2vw;
+//   inset: 5px;
+//   z-index: 3;
+//   content: '';
+//   position: absolute;
+//   border: 1px dashed #fff;
+
+// }
+
+
+// }
+// .Moves_Ads_Right_Text {
+//     background-color: transparent;
+//     color: transparent;
+//     font-size: 16px;
+//     font-weight: bold;
+//     padding: 5px;
+//     overflow: hidden; //
+//     position: relative;
+//     &::before {
+//       content: attr(data-text); 
+//       position: absolute;
+//       top: -40% !important;
+//     white-space: nowrap;
+//     animation: moveText 15s linear infinite;
+//     color: var(--white);
+//     font-weight: bold;
+//     font-size: 2vw;
+//     }
+    
+//     @keyframes moveText {
+//     from {
+//       right: -44vw;
+//     }
+//     to {
+//       right: 60vw; 
+//     }
+//     }
+    
+    
+    
+//     }
+
+// }
+
+
+
+//    @media screen and (max-width: 600px) {
+               
+//           .HeroSection_Ads,.Moves_Ads,.special_properties,.BigAds{
+//     // display: none !important;
+// }       
+                    
+//  .HeroSection_Carousel{
+//         width: 100% !important;
+//         height: 100%;
+//             img{
+//                 margin-top: 5px;
+//             margin-inline: 20px;
+//                 width: 100%;
+//                 height: 33vw;
+
+//                 object-fit: cover !important;
+//             }
+  
+//   }       
+    
+//         .special_properties{
+//     width: 90%;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     margin: 2vw auto;
+//     background: transparent !important;
+//     box-shadow: none !important;
+
+//             flex-direction: column;
+
+//     svg{
+//         font-size: 4.4vw;
+//         margin-top: 5px;
+//     }
+//     .special_property{
+//         display: flex;
+//         justify-content: center;
+//         align-items: flex-start;
+//         gap: 15px;
+//         border-right: none !important;
+//         margin-top: 15px;
+//             padding:  10px 3vw;
+
+//             background: var(--bg);
+
+//             @include Shadow;
+//             width: 40vw;
+
+
+
+//     }
+//     .Towspecial_property{
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         gap: 20px;
+//     }
+//     h5{
+//         font-size: 2.4vw;
+//         text-wrap: nowrap;
+//         margin-bottom: 0;
+//     }
+//     p{
+//         font-size: 2vw;
+//                 text-wrap: nowrap;
+
+//     }
+   
+//     .special_property_last{
+//         border-right: none;
+
+//     }
+// }
+//    }
+
+  
+//    @media screen and (max-width: 450px) {
+//     .Moves_Ads .Moves_Ads_Left{
+//               left: -9vw !important;
+//     }
+//   }
+  
+
+//   .ar{
+    
+//     @media screen and (max-width: 600px) {
+                
+//      .HeroSection_Ads{
+//         //  display: none !important;
+//      }       
+//      .BigAds{
+//          display: flex; flex-direction: column;
+//          img:nth-child(1){
+//              width: 96% !important;
+//              margin-top: -20px !important;
+//              line-height: 30px;
+//          }
+//      }     
+//      .SubTitle{
+//          z-index: 9999 !important;
+//          padding:  10px 10px 10px 10px;
+       
+//          font-size: 13px;
+    
+//        }
+//        .HeroSection{
+//          height: 54vw;
+//          margin-bottom: 30px;
+ 
+//        }
+//   .HeroSection_Carousel{
+//          width: 100% !important;
+//          height: 100%;
+//              img{
+//                  margin-top: 5px;
+//              margin-inline: 20px;
+//                  width: 100%;
+//                  height: 54vw !important;
+ 
+//                  object-fit: fill !important;
+//              }
+   
+//    }       
+//    .banner_Container{
+//      position: relative;
+//      .banner1{
+//          width: 100% !important;
+//          object-fit: fill !important;
+//      }
+//      .banner_Info{
+//          position: absolute;
+//          top: 20%;
+//          left: 10%;
+//          color: var(--white);
+//          h1{
+//              font-size: 5.5vw;
+//          }
+//          h2{
+//              font-size: 3.5vw;
+//              font-weight: bold;
+//          }
+//          strong{
+//              color: var(--secondary);
+//          }
+//          a{
+//              font-size: 3vw;
+//          }
+//      }
+//  }
+     
+//          .special_properties{
+//      width: 90%;
+//      display: flex;
+//      justify-content: space-between;
+//      align-items: center;
+//      margin: 2vw auto;
+//      background: transparent !important;
+//      box-shadow: none !important;
+//              flex-wrap: wrap;
+ 
+//      svg{
+//          font-size: 4.4vw;
+//          margin-top: 5px;
+//      }
+//      .special_property{
+//          display: flex;
+//          justify-content: center;
+//          align-items: flex-start;
+//          gap: 15px;
+//          border-right: none !important;
+//          margin-top: 15px;
+//              padding-top:  10px;
+ 
+//              background: var(--bg);
+ 
+//              @include Shadow;
+//              width: 40vw;
+ 
+ 
+ 
+//      }
+//      .Towspecial_property{
+//          display: flex;
+//          justify-content: center;
+//          align-items: center;
+//          gap: 20px;
+//      }
+//      h5{
+//          font-size: 2.4vw;
+//          text-wrap: nowrap;
+//          margin-bottom: 0;
+//      }
+//      p{
+//          font-size: 2vw;
+//          text-wrap: nowrap;
+//      }
+//      .special_property_last{
+//          border-right: none;
+//      }
+//  }
+//  }
+ 
+   
+//  //////// i know :( 
+//  /// but sorry i have to :( :(
+//     @media screen and (max-width: 1000px) {
+//      .Moves_Ads{
+//          .Moves_Ads_Right_Text {
+//              &::before {
+//                  top: 10% !important;
+//              }
+//          }
+//      }
+   
+//  }
+ 
+//  @media screen and (max-width: 700px) {
+//      .Moves_Ads{
+//          .Moves_Ads_Right_Text {
+//              font-size: 10px;
+           
+//          }
+//      }
+ 
+//      .Moves_Ads_Left{
+//          width: 35vw;
+//    height: 50px !important;
+//    // background: var(--secondary);
+//    display: flex; justify-content: center; align-items: center;
+//    z-index: 5;
+//    position:relative;
+//    left:-7vw;
+//    font-weight: bold;
+//    color: var(--bg);
+//    font-size: 2vw;
+//    padding-left: 4vw;
+//    position: relative;
+//    &::before{
+//    transform: skewX(-35deg);
+ 
+//        z-index: -1;
+//        content: "";
+//        position: absolute;
+//        top: 0;
+//        left: 0;
+//        width: 100%;
+//        height: 100%;
+//        background-color: var(--secondary);
+ 
+//    }
+ 
+ 
+ 
+//  }
+//  .Moves_Ads_Right{
+ 
+//  text-align: right;
+//  width: 60%;
+//  &::before {
+//    font-size: 2vw;
+//    inset: 5px;
+//    z-index: 3;
+//    content: '';
+//    position: absolute;
+//    border: 1px dashed #fff;
+ 
+//  }
+ 
+ 
+//  }
+//  .Moves_Ads_Right_Text {
+//      background-color: transparent;
+//      color: transparent;
+//      font-size: 16px;
+//      font-weight: bold;
+//      padding: 5px;
+//      overflow: hidden; //
+//      position: relative;
+//      &::before {
+//        content: attr(data-text); 
+//        position: absolute;
+//        top: -40% !important;
+//      white-space: nowrap;
+//      animation: moveText 15s linear infinite;
+//      color: var(--white);
+//      font-weight: bold;
+//      font-size: 2vw;
+//      }
+     
+//      @keyframes moveText {
+//      from {
+//        right: -44vw;
+//      }
+//      to {
+//        right: 60vw; 
+//      }
+//      }
+     
+     
+     
+//      }
+ 
+//  }
+ 
+ 
+ 
+//  @media screen and (max-width: 450px) {
+//    .Moves_Ads .Moves_Ads_Left{
+//              left: 10vw !important;
+//    }
+//  }
+//  }

@@ -1,0 +1,166 @@
+.Contact {
+    width: 100%;
+    min-height: 500px;
+    margin-block: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 10vw;
+    gap: 50px;
+    .button {
+        background-color: var(--secondary) ;
+        color: var(--white);
+        font-weight: bold;
+        outline: none;
+        border: none;
+        &:hover {
+            background-color: var(--fourthly);
+        }
+    }
+    >div {
+        h1 {
+            font-size: 4.5vw;
+            color: var(--fifthly) !important;
+        }
+
+        p {
+            font-size: 1.4vw;
+        }
+
+        width: 50%;
+    }
+
+    .ContactImage {
+        width: 30vw;
+        height: 22vw;
+
+        .ContactColor {
+            fill: var(--secondary) !important;
+        }
+
+        .ContactColor2 {
+            fill: var(--primary) !important;
+
+        }
+
+        .ContactColor3 {
+            fill: var(--primary) !important;
+        }
+
+    }
+    .contact_form {
+        padding: 10px;
+        label {
+            margin-bottom: 5px;
+        }
+        input {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.BecomePartner{
+    width: 50% !important;
+    margin-inline: auto;
+    .partner_image{
+        width: 100% ;
+        mix-blend-mode: multiply;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .Contact {
+        width: 100%;
+        min-height: 500px;
+        margin-block: 50px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 0vw;
+        gap: 50px;
+
+        >div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1 {
+                font-size: 11vw;
+            }
+
+            p {
+                font-size: 4vw;
+                padding-inline: 30px;
+            }
+
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .button {
+            margin-left: 0 !important;
+            width: 100% !important;
+            }
+            .ant-row{
+            justify-content: end;
+            }
+            form{
+            width: 80%;
+            text-align: start;
+            }
+            .ContactImage {
+                width: 90vw;
+                height: 42vw;
+
+                .ContactColor {
+                    fill: var(--secondary) !important;
+                }
+
+                .ContactColor2 {
+                    fill: var(--primary) !important;
+
+                }
+
+                .ContactColor3 {
+                    fill: var(--primary) !important;
+                }
+
+            }
+    }
+    .BecomePartner{
+        width: 90% !important;
+        h1{
+            font-size: 40px !important;
+        }
+    }
+}
+
+
+
+.BecomePartner{
+    width: 80% !important;
+    margin-inline: auto;
+    .partner_image{
+        width: 100% ;
+        mix-blend-mode: multiply;
+    }
+}
+
+.partner_form {
+    padding: 10px;
+        label {
+            margin-bottom: 5px;
+        }
+        input {
+            margin-bottom: 20px;
+        }
+}
+.Contact {
+    .BecomePartner{
+        button{
+            background: transparent !important;
+            color: var(--secondary) !important;
+        }
+    }
+}

@@ -18,13 +18,14 @@ function RegisterForm({ handleLoginClick }: any) {
   const { mutate, isSuccess, data, isLoading } = useRegister();
   const [t] = useTranslation();
   const dispatch = useDispatch();
-  const [gender, setGender] = useState();
-  const [birthday, setBirthday] = useState('2024-10-17');
+  const [gender, setGender] = useState("Male");
+  const [birthday, setBirthday] = useState("");
   const [phoneValue, setPhoneValue] = useState();
 
   const form = useRef<any>(null);
 
   const handelSubmit = (values: any) => {
+    console.log(values)
     mutate(
       {
         first_name: values['first_name'],
@@ -32,8 +33,8 @@ function RegisterForm({ handleLoginClick }: any) {
         email: values['email'],
         password: values['password'],
         phone: values['phone'],
-        birthday: values['birthday'],
-        gender: values['gender'],
+        birthday: birthday,
+        gender: gender,
       }
     );
     //  return localStorage.setItem(USER_EMAIL , values.email );
@@ -89,9 +90,9 @@ function RegisterForm({ handleLoginClick }: any) {
             <div className="login_dev one_row_dev">
               <span className="birthday_elements">
                 <label htmlFor="birthday" className="birthday_label">Birthday</label>
-                <Field id="birthday" name="birthday" className="birthday" type="date" placeholder="Birthday" onChange={(birthday: any) => setBirthday(birthday)} />
+                <Field id="birthday" name="birthday" className="birthday" value={birthday} type="date" onChange={(e: any) => setBirthday(e.target.value)} />
               </span>
-              <TalabeeField type="Select" name="gender" onChange={(gender) => setGender(gender)} option={GenderOption} placeholder="Gender" label='Gender' />
+              <TalabeeField type="Select" name="gender" onChange={(gender) => setGender(gender.toString())} option={GenderOption} placeholder="Gender" label='Gender' />
             </div>
 
             <LoadingButton isLoading={isLoading} type="submit">
